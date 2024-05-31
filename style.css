@@ -16,12 +16,13 @@ body{
 }
 .container{
     display: flex;
-    width: 90px;
+    width: 100vw;
 }
 .panel{
-    background-size: center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    height: 80vmax;
+    height: 80vh;
     border-radius: 50px;
     flex:0.5;
     position: relative;
@@ -40,13 +41,14 @@ body{
     flex:5;
 }
 .panel.active h3{
-    opacity: 1;
+    opacity:1;
 }
 @media(max-width:480px){
     .container{
         width:100vw;
     }
+
     .panel:nth-of-type(4),.panel:nth-of-type(5){
-        display: none;
+        display:none;
     }
 }
